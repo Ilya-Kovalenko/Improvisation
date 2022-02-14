@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Гонг.wav-f518b00de7dd68dda8fd523262cc36a2.sample"
+
+[deps]
+
+source_file="res://Гонг.wav"
+dest_files=[ "res://.import/Гонг.wav-f518b00de7dd68dda8fd523262cc36a2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

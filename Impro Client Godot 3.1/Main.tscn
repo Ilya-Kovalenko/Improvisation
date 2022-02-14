@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Roboto-Medium.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 65
+font_data = ExtResource( 2 )
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1.05945
+margin_bottom = 1.05945
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -384.0
+margin_right = 512.0
+margin_bottom = 384.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LocalIP" type="Label" parent="."]
+margin_left = 75.6282
+margin_top = 449.021
+margin_right = 934.628
+margin_bottom = 509.021
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.635294, 0.0235294, 0.85098, 1 )
+text = "Local IP address"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 8.11231
+margin_top = 309.848
+margin_right = 998.114
+margin_bottom = 427.848
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.635294, 0.0235294, 0.85098, 1 )
+text = "Ожидайте подключения"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

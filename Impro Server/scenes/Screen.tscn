@@ -1,0 +1,509 @@
+[gd_scene load_steps=37 format=2]
+
+[ext_resource path="res://Soup of Justice.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/Screen.gd" type="Script" id=2]
+[ext_resource path="res://correct_answer_new.wav" type="AudioStream" id=3]
+[ext_resource path="res://Icegirl.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://Гонг.wav" type="AudioStream" id=5]
+[ext_resource path="res://Колокольчик.wav" type="AudioStream" id=6]
+[ext_resource path="res://Кинопремия.wav" type="AudioStream" id=7]
+[ext_resource path="res://Конец раунда.wav" type="AudioStream" id=8]
+[ext_resource path="res://Roboto-Medium.ttf" type="DynamicFontData" id=9]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.92549, 0, 0, 1 )
+corner_radius_bottom_right = 300
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.109804, 0.207843, 1, 1 )
+corner_radius_bottom_left = 300
+
+[sub_resource type="DynamicFont" id=3]
+size = 200
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 200
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 50
+extra_spacing_char = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.580392, 0.254902, 1, 1 )
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.407843, 0, 0.929412, 1 )
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.533333, 0.168627, 1, 1 )
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="DynamicFont" id=10]
+size = 70
+extra_spacing_top = 8
+extra_spacing_char = -2
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0, 0.890196, 0.2, 1 )
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id=22]
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0, 0.890196, 0.2, 1 )
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id=23]
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0, 0.890196, 0.2, 1 )
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id=24]
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id=11]
+content_margin_left = 17.0
+content_margin_right = 17.0
+content_margin_top = 2.0
+content_margin_bottom = 2.0
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.533333, 0.168627, 1, 1 )
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="DynamicFont" id=12]
+size = 23
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.580392, 0.254902, 1, 1 )
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.407843, 0, 0.929412, 1 )
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.533333, 0.168627, 1, 1 )
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="DynamicFont" id=16]
+size = 34
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 20
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 31
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 22
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=26]
+size = 22
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=27]
+size = 22
+font_data = ExtResource( 9 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelRed" type="Panel" parent="."]
+margin_right = 800.0
+margin_bottom = 500.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelBlue" type="Panel" parent="."]
+margin_left = 1120.0
+margin_right = 1920.0
+margin_bottom = 500.0
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLeft" type="Label" parent="."]
+margin_top = -2.0
+margin_right = 769.0
+margin_bottom = 498.0
+custom_fonts/font = SubResource( 3 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelRight" type="Label" parent="."]
+margin_left = 1144.0
+margin_right = 1920.0
+margin_bottom = 500.0
+custom_fonts/font = SubResource( 4 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelIp" type="Label" parent="."]
+margin_left = 165.09
+margin_top = 528.785
+margin_right = 509.09
+margin_bottom = 590.785
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.533333, 0.168627, 1, 1 )
+text = "IP: 192.168.0.100"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 776.0
+margin_top = 811.993
+margin_right = 1144.0
+margin_bottom = 996.993
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+text = "Обнулить"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonTimer45" type="Button" parent="."]
+margin_left = 77.255
+margin_top = 828.0
+margin_right = 227.255
+margin_bottom = 978.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+text = "45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Texture45" type="ProgressBar" parent="."]
+margin_left = 78.004
+margin_top = 1002.52
+margin_right = 228.004
+margin_bottom = 1034.52
+custom_styles/fg = SubResource( 19 )
+custom_styles/bg = SubResource( 22 )
+max_value = 45.0
+step = 1.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer45" type="Timer" parent="."]
+
+[node name="ButtonTimer80" type="Button" parent="."]
+margin_left = 291.863
+margin_top = 828.0
+margin_right = 441.863
+margin_bottom = 978.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+text = "80"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Texture80" type="ProgressBar" parent="."]
+margin_left = 291.863
+margin_top = 1002.52
+margin_right = 441.863
+margin_bottom = 1034.52
+custom_styles/fg = SubResource( 20 )
+custom_styles/bg = SubResource( 23 )
+max_value = 80.0
+step = 1.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer80" type="Timer" parent="."]
+
+[node name="ButtonTimer420" type="Button" parent="."]
+margin_left = 506.309
+margin_top = 828.0
+margin_right = 656.309
+margin_bottom = 978.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+text = "420"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Texture420" type="ProgressBar" parent="."]
+margin_left = 506.309
+margin_top = 1002.52
+margin_right = 656.309
+margin_bottom = 1034.52
+custom_styles/fg = SubResource( 21 )
+custom_styles/bg = SubResource( 24 )
+max_value = 420.0
+step = 1.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer420" type="Timer" parent="."]
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Sound2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Sound3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Sound4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Sound5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Sound6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Sound7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Sound8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Sound9" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Sound10" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="SoundGong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="SoundFilm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="SoundGudok" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="SoundRing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="SoundRing2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="SoundRing3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="SoundRing4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="SoundRing5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="SoundRing6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="."]
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="."]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 1349.48
+margin_top = 640.283
+margin_right = 1747.48
+margin_bottom = 852.283
+custom_styles/normal = SubResource( 11 )
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color_selected = Color( 0.533333, 0.168627, 1, 1 )
+custom_colors/font_color = Color( 0.533333, 0.168627, 1, 1 )
+text = "Hello"
+wrap_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonSend" type="Button" parent="."]
+margin_left = 1388.4
+margin_top = 883.546
+margin_right = 1712.4
+margin_bottom = 1012.55
+focus_mode = 0
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+custom_fonts/font = SubResource( 16 )
+enabled_focus_mode = 0
+text = "Отправить сообщение"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 1501.76
+margin_top = 524.211
+margin_right = 1792.76
+margin_bottom = 548.211
+custom_fonts/font = SubResource( 18 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 183.433
+margin_top = 698.302
+margin_right = 556.431
+margin_bottom = 768.302
+custom_fonts/font = SubResource( 17 )
+custom_colors/font_color = Color( 0.533333, 0.168627, 1, 1 )
+text = "Таймеры"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 77.255
+margin_top = 787.214
+margin_right = 227.255
+margin_bottom = 817.214
+custom_fonts/font = SubResource( 25 )
+custom_colors/font_color = Color( 0.533333, 0.168627, 1, 1 )
+text = "Кинопремия"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 291.863
+margin_top = 787.214
+margin_right = 441.863
+margin_bottom = 817.214
+custom_fonts/font = SubResource( 26 )
+custom_colors/font_color = Color( 0.533333, 0.168627, 1, 1 )
+text = "Официант"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 482.824
+margin_top = 787.214
+margin_right = 685.824
+margin_bottom = 817.214
+custom_fonts/font = SubResource( 27 )
+custom_colors/font_color = Color( 0.533333, 0.168627, 1, 1 )
+text = "Остальные раунды"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="ButtonTimer45" to="." method="_on_ButtonTimer45_pressed"]
+[connection signal="timeout" from="Timer45" to="." method="_on_Timer45_timeout"]
+[connection signal="pressed" from="ButtonTimer80" to="." method="_on_ButtonTimer80_pressed"]
+[connection signal="timeout" from="Timer80" to="." method="_on_Timer80_timeout"]
+[connection signal="pressed" from="ButtonTimer420" to="." method="_on_ButtonTimer420_pressed"]
+[connection signal="timeout" from="Timer420" to="." method="_on_Timer420_timeout"]
+[connection signal="pressed" from="ButtonSend" to="." method="_on_ButtonSend_pressed"]
